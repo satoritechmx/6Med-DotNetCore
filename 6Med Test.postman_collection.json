@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "6df11ba3-aa18-447b-b17f-653fdf638a8c",
+		"name": "6Med Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"Test\",\n    \"lastName\": \"Test\",\n    \"email\": \"test@test.com\"\n\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7286/Users",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7286",
+					"path": [
+						"Users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List All Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7286/Users",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7286",
+					"path": [
+						"Users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upsert User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": \"d8b47837-de1c-428b-9f48-0b165e2326f6\",\n        \"firstName\": \"Paco3\",\n        \"lastName\": \"Carranza\",\n        \"email\": \"test@test.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7286/Users/d8b47837-de1c-428b-9f48-0b165e2326f6",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7286",
+					"path": [
+						"Users",
+						"d8b47837-de1c-428b-9f48-0b165e2326f6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": \"d8b47837-de1c-428b-9f48-0b165e2326f6\",\n        \"firstName\": \"Paco3\",\n        \"lastName\": \"Carranza\",\n        \"email\": \"test@test.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7286/Users/d8b47837-de1c-428b-9f48-0b165e2326f6",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7286",
+					"path": [
+						"Users",
+						"d8b47837-de1c-428b-9f48-0b165e2326f6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
