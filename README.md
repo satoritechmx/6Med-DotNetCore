@@ -2,4 +2,4 @@
 
 Use the command dotnet run
 
-Theb use Postman and import the configuration, after that start testing CRUD methods.
+Then use Postman and import the configuration, after that set the project local URL and start testing CRUD methods.
